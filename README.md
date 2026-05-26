@@ -8,6 +8,7 @@ categorized subfolders based on their file extension.
 - Dry-run mode to preview changes before actually moving files
 - Collision handling — never overwrites existing files (renames to file_1, file_2...)
 - Logging — every moved file is recorded in organizer.log with a timestamp
+- Type 'n' on dry-run prompt to actually organize and move your files
 
 ## Modules Used
 - os — folder scanning, path building, directory creation
@@ -19,4 +20,7 @@ python file_organizer.py
 
 ## Usage
 Enter the directory path to organize: C:/Users/YourName/Downloads
-Dry run? (y/n): y
+Dry run? (y/n): y   → just a preview, no files are moved
+
+Enter the directory path to organize: C:/Users/YourName/Downloads
+Dry run? (y/n): n   → actually moves and organizes all files 
